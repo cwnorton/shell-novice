@@ -78,46 +78,43 @@ being able to interact with them is becoming a necessary skill. We can build on 
 
 ## Lynne's Pipeline: Starting Point
 
-Lynne Phaedrus, a marine biologist,
-has just returned from a six-month survey of the
-[North Pacific Gyre](http://en.wikipedia.org/wiki/North_Pacific_Gyre),
-where she has been sampling gelatinous marine life in the
-[Great Pacific Garbage Patch](http://en.wikipedia.org/wiki/Great_Pacific_Garbage_Patch).
-She has 300 samples in all, and now needs to:
+Lynne Phaedrus, a PhD student working on corpus linguistics,
+has just downloaded a number of newspaper articles from an online archiving service.
+Her aim is to construct a text corpus to investigate how contemporary reporting refers to the work of comedians.
+She has 10 files in all, each containing up to 500 articles, and now needs to:
 
-1.  Run each sample through an assay machine
-    that will measure the relative abundance of 300 different proteins.
-    The machine's output for a single sample is
-    a file with one line for each protein.
-2.  Calculate statistics for each of the proteins separately
-    using a program her supervisor wrote called `goostat`.
-3.  Compare the statistics for each protein
-    with corresponding statistics for each other protein
-    using a program one of the other graduate students wrote called `goodiff`.
-4.  Write up results.
-    Her supervisor would really like her to do this by the end of the month
-    so that her paper can appear in an upcoming special issue of *Aquatic Goo Letters*.
+1.  Split the large files into a file per article
+    using a program a colleague wrote called `split_articles`.
+2.  Rename each resulting article and wrap XML tags around each article
+    for use in her corpus analysis software,
+    using a different program by the same helpful colleague called
+    `process_article`.
+3.  Analyse the results and write them up.
+    Her supervisor would really like her to have preliminary results ready
+    in four days time, 
+    to make the application deadline for giving a talk at the upcoming
+    prestigous annual conference *Comedians and Corpora*.
 
-It takes about half an hour for the assay machine to process each sample.
-The good news is that
-it only takes two minutes to set each one up.
-Since her lab has eight assay machines that she can use in parallel,
-this step will "only" take about two weeks.
+The good news is that running `split_articles` on her ten files will take hardly
+any time.
 
-The bad news is that if she has to run `goostat` and `goodiff` by hand,
-she'll have to enter filenames and click "OK" 45,150 times
-(300 runs of `goostat`, plus 300x299/2 runs of `goodiff`).
-At 30 seconds each,
-that will take more than two weeks.
-Not only would she miss her paper deadline,
-the chances of her typing all of those commands right are practically zero.
+The bad news is that if she has to run `process_article` by hand,
+she'll have to enter filenames and click "OK" around five thousand times, once
+for each article.
+Given her typing speed and the speed of the program, each run will take at least twenty seconds,
+that's 5000 * 20 = 100,000 seconds, which is around 30 hours.
+That's time Lynne simply doesn't have.
+What's more, her PhD requires that she does this whole thing again with newspaper
+articles from another country---she's planning on doing that next year.
 
-The next few lessons will explore what she should do instead.
+The next few lessons will explore what she should do instead of slaving away
+typing everything by hand.
 More specifically,
 they explain how she can use a command shell
 to automate the repetitive steps in her processing pipeline
-so that her computer can work 24 hours a day while she writes her paper.
+so that her computer can do the work for her.
 As a bonus,
 once she has put a processing pipeline together,
-she will be able to use it again whenever she collects more data.
+she will be able to use it again next year on the foreign articles---and again
+whenever she needs to.
 
