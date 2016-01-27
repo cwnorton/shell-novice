@@ -65,7 +65,7 @@ More specifically, when we type `whoami` the shell:
 > ## Username Variation {.callout}
 >
 > In this lesson, we have used the username `nelle` (associated 
-> with our hypothetical scientist Nelle) in example input and output throughout.  
+> with our hypothetical scientist Lynne) in example input and output throughout.  
 > However, when 
 > you type this lesson's commands on your computer,
 > you should see and use something different, 
@@ -84,7 +84,7 @@ the directory that the computer assumes we want to run commands in
 unless we explicitly specify something else.
 Here,
 the computer's response is `/Users/nelle`,
-which is Nelle's **home directory**:
+which is Lynne's **home directory**:
 
 ~~~ {.bash}
 $ pwd
@@ -106,11 +106,11 @@ $ pwd
 To understand what a "home directory" is,
 let's have a look at how the file system as a whole is organized.  For the 
 sake of example, we'll be 
-illustrating the filesystem on our scientist Nelle's computer.  After this
+illustrating the filesystem on our scientist Lynne's computer.  After this
 illustration, you'll be learning commands to explore your own filesystem, 
 which will be constructed in a similar way, but not be exactly identical.  
 
-On Nelle's computer, the filesystem looks like this: 
+On Lynne's computer, the filesystem looks like this: 
 
 ![The File System](fig/filesystem.svg)
 
@@ -140,14 +140,14 @@ because its name begins with `/`.
 > it's just a separator.
 
 Underneath `/Users`,
-we find one directory for each user with an account on Nelle's machine, 
+we find one directory for each user with an account on Lynne's machine, 
 her colleagues the Mummy and Wolfman.  
 
 ![Home Directories](fig/home-directories.svg)
 
 The Mummy's files are stored in `/Users/imhotep`,
 Wolfman's in `/Users/larry`,
-and Nelle's in `/Users/nelle`.  Because Nelle is the user in our 
+and Lynne's in `/Users/nelle`.  Because Lynne is the user in our 
 examples here, this is why we get `/Users/nelle` as our home directory.  
 Typically, when you open a new command prompt you will be in 
 your home directory to start.  
@@ -429,7 +429,7 @@ Run `pwd` and `ls -F` to ensure that we're in the directory we expect.
 > ## Two More Shortcuts {.callout}
 >
 > The shell interprets the character `~` (tilde) at the start of a path to
-> mean "the current user's home directory". For example, if Nelle's home
+> mean "the current user's home directory". For example, if Lynne's home
 > directory is `/Users/nelle`, then `~/data` is equivalent to
 > `/Users/nelle/data`. This only works if it is the first character in the
 > path: `here/there/~/elsewhere` is *not* `/Users/nelle/elsewhere`. 
@@ -440,10 +440,10 @@ Run `pwd` and `ls -F` to ensure that we're in the directory we expect.
 > and forth between directories. The difference between `cd ..` and `cd -` is 
 > that the former brings you *up*, while the later brings you *back*. 
 
-### Nelle's Pipeline: Organizing Files
+### Lynne's Pipeline: Organizing Files
 
 Knowing just this much about files and directories,
-Nelle is ready to organize the files that the protein assay machine will create.
+Lynne is ready to organize the files that the protein assay machine will create.
 First,
 she creates a directory called `north-pacific-gyre`
 (to remind herself where the data came from).
@@ -457,7 +457,7 @@ a directory called `revised-revised-results-3`.)
 
 > ## Output sorting {.callout}
 >
-> Nelle names her directories "year-month-day",
+> Lynne names her directories "year-month-day",
 > with leading zeroes for months and days,
 > because the shell displays file and directory names in alphabetical order.
 > If she used month names,
@@ -477,7 +477,7 @@ she will call her files `NENE01729A.txt`, `NENE01812A.txt`, and so on.
 All 1520 files will go into the same directory.
 
 If she is in her home directory,
-Nelle can see what files she has using the command:
+Lynne can see what files she has using the command:
 
 ~~~ {.bash}
 $ ls north-pacific-gyre/2012-07-03/

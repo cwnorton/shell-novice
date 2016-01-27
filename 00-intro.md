@@ -76,9 +76,9 @@ In addition, the command line is often the easiest way to interact with remote m
 Familiarity with the shell is near essential to run a variety of specialised tools and resources including high-performance computing systems. As clusters and cloud computing systems become more popular for scientific data crunching,
 being able to interact with them is becoming a necessary skill. We can build on the command-line skills covered here to tackle a wide range of scientific questions and computational challenges.
 
-## Nelle's Pipeline: Starting Point
+## Lynne's Pipeline: Starting Point
 
-Nelle Nemo, a marine biologist,
+Lynne Phaedrus, a marine biologist,
 has just returned from a six-month survey of the
 [North Pacific Gyre](http://en.wikipedia.org/wiki/North_Pacific_Gyre),
 where she has been sampling gelatinous marine life in the

@@ -270,13 +270,13 @@ cp unicorn.dat original-unicorn.dat
 > isn't foolproof, but it's a handy way to see what's going to happen when
 > you're still learning how loops work.
 
-## Nelle's Pipeline: Processing Files
+## Lynne's Pipeline: Processing Files
 
-Nelle is now ready to process her data files.
+Lynne is now ready to process her data files.
 Since she's still learning how to use the shell,
 she decides to build up the required commands in stages.
 Her first step is to make sure that she can select the right files --- remember,
-these are ones whose names end in 'A' or 'B', rather than 'Z'. Starting from her home directory, Nelle types:
+these are ones whose names end in 'A' or 'B', rather than 'Z'. Starting from her home directory, Lynne types:
 
 ~~~ {.bash}
 $ cd north-pacific-gyre/2012-07-03
@@ -319,7 +319,7 @@ but now she's sure she can select the right files and generate the right output 
 
 Typing in commands over and over again is becoming tedious,
 though,
-and Nelle is worried about making mistakes,
+and Lynne is worried about making mistakes,
 so instead of re-entering her loop,
 she presses the up arrow.
 In response,
@@ -331,7 +331,7 @@ $ for datafile in *[AB].txt; do echo $datafile stats-$datafile; done
 ~~~
 
 Using the left arrow key,
-Nelle backs up and changes the command `echo` to `goostats`:
+Lynne backs up and changes the command `echo` to `goostats`:
 
 ~~~ {.bash}
 $ for datafile in *[AB].txt; do bash goostats $datafile stats-$datafile; done
@@ -340,7 +340,7 @@ $ for datafile in *[AB].txt; do bash goostats $datafile stats-$datafile; done
 When she presses enter,
 the shell runs the modified command.
 However, nothing appears to happen --- there is no output.
-After a moment, Nelle realizes that since her script doesn't print anything to the screen any longer,
+After a moment, Lynne realizes that since her script doesn't print anything to the screen any longer,
 she has no idea whether it is running, much less how quickly.
 She kills the job by typing Control-C,
 uses up-arrow to repeat the command,
@@ -382,7 +382,7 @@ so she decides to get some coffee and catch up on her reading.
 > Another way to repeat previous work is to use the `history` command to
 > get a list of the last few hundred commands that have been executed, and
 > then to use `!123` (where "123" is replaced by the command number) to
-> repeat one of those commands. For example, if Nelle types this:
+> repeat one of those commands. For example, if Lynne types this:
 > 
 > ~~~
 > $ history | tail -5

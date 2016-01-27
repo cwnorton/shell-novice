@@ -13,7 +13,7 @@ minutes: 15
 
 We now know how to explore files and directories,
 but how do we create them in the first place?
-Let's go back to Nelle's home directory,
+Let's go back to Lynne's home directory,
 `/Users/nelle`,
 and use `ls -F` to see what it contains:
 
@@ -319,7 +319,7 @@ but it does find the copy in `thesis` that we didn't delete.
 
 > ## What's In A Name? {.callout}
 >
-> You may have noticed that all of Nelle's files' names are "something dot
+> You may have noticed that all of Lynne's files' names are "something dot
 > something", and in this part of the lesson, we always used the extension 
 > `.txt`.  This is just a convention: we can call a file `mythesis` or
 > almost anything else we want. However, most people use two-part names
