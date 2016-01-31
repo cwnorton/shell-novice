@@ -51,7 +51,7 @@ it shows us who the shell thinks we are:
 $ whoami
 ~~~
 ~~~ {.output}
-nelle
+lynne
 ~~~
 
 More specifically, when we type `whoami` the shell:
@@ -64,14 +64,14 @@ More specifically, when we type `whoami` the shell:
 
 > ## Username Variation {.callout}
 >
-> In this lesson, we have used the username `nelle` (associated 
+> In this lesson, we have used the username `lynne` (associated 
 > with our hypothetical scientist Lynne) in example input and output throughout.  
 > However, when 
 > you type this lesson's commands on your computer,
 > you should see and use something different, 
 > namely, the username associated with the user account on your computer.  This 
 > username will be the output from `whoami`.  In 
-> what follows, `nelle` should always be replaced by that username.  
+> what follows, `lynne` should always be replaced by that username.  
 
 Next,
 let's find out where we are by running a command called `pwd`
@@ -83,22 +83,22 @@ i.e.,
 the directory that the computer assumes we want to run commands in
 unless we explicitly specify something else.
 Here,
-the computer's response is `/Users/nelle`,
+the computer's response is `/Users/lynne`,
 which is Lynne's **home directory**:
 
 ~~~ {.bash}
 $ pwd
 ~~~
 ~~~ {.output}
-/Users/nelle
+/Users/lynne
 ~~~
 
 > ## Home Directory Variation {.callout}
 >
 > The home directory path will look different on different operating systems.
-> On Linux it may look like `/home/nelle`,
-> and on Windows it will be similar to `C:\Documents and Settings\nelle` or 
-> `C:\Users\nelle`.  
+> On Linux it may look like `/home/lynne`,
+> and on Windows it will be similar to `C:\Documents and Settings\lynne` or 
+> `C:\Users\lynne`.  
 > (Note that it may look slightly different for different versions of Windows.)
 > In future examples, we've used Mac output as the default - Linux and Windows 
 > output may differ slightly, but should be generally similar.  
@@ -117,7 +117,7 @@ On Lynne's computer, the filesystem looks like this:
 At the top is the **root directory**
 that holds everything else.
 We refer to it using a slash character `/` on its own;
-this is the leading slash in `/Users/nelle`.
+this is the leading slash in `/Users/lynne`.
 
 Inside that directory are several other directories:
 `bin` (which is where some built-in programs are stored),
@@ -126,7 +126,7 @@ Inside that directory are several other directories:
 `tmp` (for temporary files that don't need to be stored long-term),
 and so on.  
 
-We know that our current working directory `/Users/nelle` is stored inside `/Users`
+We know that our current working directory `/Users/lynne` is stored inside `/Users`
 because `/Users` is the first part of its name.
 Similarly,
 we know that `/Users` is stored inside the root directory `/`
@@ -147,8 +147,8 @@ her colleagues the Mummy and Wolfman.
 
 The Mummy's files are stored in `/Users/imhotep`,
 Wolfman's in `/Users/larry`,
-and Lynne's in `/Users/nelle`.  Because Lynne is the user in our 
-examples here, this is why we get `/Users/nelle` as our home directory.  
+and Lynne's in `/Users/lynne`.  Because Lynne is the user in our 
+examples here, this is why we get `/Users/lynne` as our home directory.  
 Typically, when you open a new command prompt you will be in 
 your home directory to start.  
 
@@ -263,16 +263,16 @@ $ cd data
 These commands will move us from our home directory onto our Desktop, then into 
 the `data-shell` directory, then into the `data` directory.  `cd` doesn't print anything,
 but if we run `pwd` after it, we can see that we are now 
-in `/Users/nelle/Desktop/data-shell/data`.
+in `/Users/lynne/Desktop/data-shell/data`.
 If we run `ls` without arguments now,
-it lists the contents of `/Users/nelle/Desktop/data-shell/data`,
+it lists the contents of `/Users/lynne/Desktop/data-shell/data`,
 because that's where we now are:
 
 ~~~ {.bash}
 $ pwd
 ~~~
 ~~~ {.output}
-/Users/nelle/Desktop/data-shell/data
+/Users/lynne/Desktop/data-shell/data
 ~~~
 ~~~ {.bash}
 $ ls -F
@@ -311,13 +311,13 @@ $ cd ..
 or more succinctly,
 the **parent** of the current directory.
 Sure enough,
-if we run `pwd` after running `cd ..`, we're back in `/Users/nelle/Desktop/data-shell`:
+if we run `pwd` after running `cd ..`, we're back in `/Users/lynne/Desktop/data-shell`:
 
 ~~~ {.bash}
 $ pwd
 ~~~
 ~~~ {.output}
-/Users/nelle/Desktop/data-shell
+/Users/lynne/Desktop/data-shell
 ~~~
 
 The special directory `..` doesn't usually show up when we run `ls`.  If we want 
@@ -335,7 +335,7 @@ Desktop/            north-pacific-gyre/ writing/
 
 `-a` stands for "show all";
 it forces `ls` to show us file and directory names that begin with `.`,
-such as `..` (which, if we're in `/Users/nelle`, refers to the `/Users` directory)
+such as `..` (which, if we're in `/Users/lynne`, refers to the `/Users` directory)
 As you can see,
 it also displays another special directory that's just called `.`,
 which means "the current working directory".
@@ -356,8 +356,8 @@ but we'll see some uses for it soon.
 > The special names `.` and `..` don't belong to `ls`;
 > they are interpreted the same way by every program.
 > For example,
-> if we are in `/Users/nelle/data`,
-> the command `ls ..` will give us a listing of `/Users/nelle`.
+> if we are in `/Users/lynne/data`,
+> the command `ls ..` will give us a listing of `/Users/lynne`.
 > When the meanings of the parts are the same no matter how they're combined,
 > programmers say they are **orthogonal**:
 > Orthogonal systems tend to be easier for people to learn
@@ -378,7 +378,7 @@ How can you check what happened?  `pwd` gives us the answer!
 $ pwd
 ~~~
 ~~~ {.output}
-/Users/nelle
+/Users/lynne
 ~~~
 
 It turns out that `cd` without an argument will return you to your home directory, 
@@ -418,10 +418,10 @@ to move to `data-shell`.
 $ pwd
 ~~~
 ~~~ {.output}
-/Users/nelle/Desktop/data-shell/data
+/Users/lynne/Desktop/data-shell/data
 ~~~
 ~~~ {.bash}
-$ cd /Users/nelle/Desktop/data-shell
+$ cd /Users/lynne/Desktop/data-shell
 ~~~
 
 Run `pwd` and `ls -F` to ensure that we're in the directory we expect.  
@@ -430,9 +430,9 @@ Run `pwd` and `ls -F` to ensure that we're in the directory we expect.
 >
 > The shell interprets the character `~` (tilde) at the start of a path to
 > mean "the current user's home directory". For example, if Lynne's home
-> directory is `/Users/nelle`, then `~/data` is equivalent to
-> `/Users/nelle/data`. This only works if it is the first character in the
-> path: `here/there/~/elsewhere` is *not* `/Users/nelle/elsewhere`. 
+> directory is `/Users/lynne`, then `~/data` is equivalent to
+> `/Users/lynne/data`. This only works if it is the first character in the
+> path: `here/there/~/elsewhere` is *not* `/Users/lynne/elsewhere`. 
 > 
 > Another shortcut is the `-` (dash) character.  `cd` will translate `-` into
 > *the previous directory I was in*, which is faster than having to remember, 

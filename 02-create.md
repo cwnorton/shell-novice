@@ -14,14 +14,14 @@ minutes: 15
 We now know how to explore files and directories,
 but how do we create them in the first place?
 Let's go back to Lynne's home directory,
-`/Users/nelle`,
+`/Users/lynne`,
 and use `ls -F` to see what it contains:
 
 ~~~ {.bash}
 $ pwd
 ~~~
 ~~~ {.output}
-/Users/nelle
+/Users/lynne
 ~~~
 ~~~ {.bash}
 $ ls -F
@@ -134,13 +134,13 @@ $ ls
 > file's disk space right away.
 
 Let's re-create that file
-and then move up one directory to `/Users/nelle` using `cd ..`:
+and then move up one directory to `/Users/lynne` using `cd ..`:
 
 ~~~ {.bash}
 $ pwd
 ~~~
 ~~~ {.output}
-/Users/nelle/thesis
+/Users/lynne/thesis
 ~~~
 ~~~ {.bash}
 $ nano draft.txt
@@ -213,7 +213,7 @@ rather than going into the `thesis` directory and running `nano` on `draft.txt` 
 $ pwd
 ~~~
 ~~~ {.output}
-/Users/nelle
+/Users/lynne
 ~~~
 ~~~ {.bash}
 $ mkdir thesis
