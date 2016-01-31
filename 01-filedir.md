@@ -204,7 +204,7 @@ We can also use `ls` to see the contents of a different directory.  Let's take a
 look at our `Desktop` directory by running `ls -F Desktop`,
 i.e.,
 the command `ls` with the **arguments** `-F` and `Desktop`.
-The second argument --- the one *without* a leading dash --- tells `ls` that
+The second argument — the one *without* a leading dash — tells `ls` that
 we want a listing of something other than our current working directory:
 
 ~~~ {.bash}

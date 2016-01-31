@@ -245,7 +245,7 @@ cp unicorn.dat original-unicorn.dat
 
 > ## Measure Twice, Run Once {.callout}
 > 
-> A loop is a way to do many things at once --- or to make many mistakes at
+> A loop is a way to do many things at once — or to make many mistakes at
 > once if it does the wrong thing. One way to check what a loop *would* do
 > is to echo the commands it would run instead of actually running them.
 > For example, we could write our file copying loop like this:
@@ -275,7 +275,7 @@ cp unicorn.dat original-unicorn.dat
 Lynne is now ready to process her data files.
 Since she's still learning how to use the shell,
 she decides to build up the required commands in stages.
-Her first step is to make sure that she can select the right files --- remember,
+Her first step is to make sure that she can select the right files — remember,
 these are ones whose names end in 'A' or 'B', rather than 'Z'. Starting from her home directory, Lynne types:
 
 ~~~ {.bash}
@@ -339,7 +339,7 @@ $ for datafile in *[AB].txt; do bash goostats $datafile stats-$datafile; done
 
 When she presses enter,
 the shell runs the modified command.
-However, nothing appears to happen --- there is no output.
+However, nothing appears to happen — there is no output.
 After a moment, Lynne realizes that since her script doesn't print anything to the screen any longer,
 she has no idea whether it is running, much less how quickly.
 She kills the job by typing Control-C,

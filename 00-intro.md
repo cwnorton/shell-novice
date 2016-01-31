@@ -59,7 +59,7 @@ What's special about it is that its job is to run other programs
 rather than to do calculations itself.
 The most popular Unix shell is Bash,
 the Bourne Again SHell
-(so-called because it's derived from a shell written by Stephen Bourne --- this
+(so-called because it's derived from a shell written by Stephen Bourne — this
 is what passes for wit among programmers).
 Bash is the default shell on most modern implementations of Unix
 and in most packages that provide Unix-like tools for Windows.
@@ -105,7 +105,7 @@ Given her typing speed and the speed of the program, each run will take at least
 that's 5000 * 20 = 100,000 seconds, which is around 30 hours.
 That's time Lynne simply doesn't have.
 What's more, her PhD requires that she does this whole thing again with newspaper
-articles from another country---she's planning on doing that next year.
+articles from another country—she's planning on doing that next year.
 
 The next few lessons will explore what she should do instead of slaving away
 typing everything by hand.
@@ -115,6 +115,6 @@ to automate the repetitive steps in her processing pipeline
 so that her computer can do the work for her.
 As a bonus,
 once she has put a processing pipeline together,
-she will be able to use it again next year on the foreign articles---and again
+she will be able to use it again next year on the foreign articles—and again
 whenever she needs to.
 
