@@ -5,4 +5,4 @@ First encounter with the Unix shell.  Adapted from [here](http://github.com/swca
 
 Lesson website is [here](http://cwnorton.github.io/shell-novice/).
 
-For tips on using these materials in a workshop, see the Software Carpentry [Instructor's Guide](http://swcarpentry.github.io/shell-novice/instructors.html).  
+For tips on using these materials in a workshop, see the [Instructor's Guide](http://cwnorton.github.io/shell-novice/instructors.html).  
