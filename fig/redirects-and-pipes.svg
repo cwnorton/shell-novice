@@ -13,9 +13,9 @@
   <rect stroke="#000" id="svg_44" height="26" width="117" y="460.383083" x="386.042797" stroke-opacity="null" stroke-width="0" fill="#9b59b6"/>
   <rect stroke="#000" id="svg_40" height="26" width="117" y="460.383083" x="195.97974" stroke-opacity="null" stroke-width="0" fill="#f39c12"/>
   <rect stroke="#000" id="svg_11" height="26" width="117" y="80.25697" x="205.983058" stroke-opacity="null" stroke-width="0" fill="#333333"/>
-  <text font-weight="bold" xml:space="preserve" text-anchor="left" font-family="'Courier New', Courier, monospace" font-size="18" id="svg_1" y="47.007301" x="31.506638" stroke-width="0" stroke="#000" fill="#e74c3c">wc -l *.pdb</text>
+  <text font-weight="bold" xml:space="preserve" text-anchor="left" font-family="'Courier New', Courier, monospace" font-size="18" id="svg_1" y="47.007301" x="31.506638" stroke-width="0" stroke="#000" fill="#e74c3c">wc -l *.art</text>
   <rect stroke="#000" rx="6" id="svg_2" height="44" width="168" y="71.006638" x="21.5" stroke-width="0" fill="#e74c3c"/>
-  <text font-weight="bold" xml:space="preserve" text-anchor="left" font-family="'Courier New', Courier, monospace" font-size="18" id="svg_3" y="97.006638" x="44.5" stroke-width="0" stroke="#000" fill="#ffffff">wc -l *.pdb</text>
+  <text font-weight="bold" xml:space="preserve" text-anchor="left" font-family="'Courier New', Courier, monospace" font-size="18" id="svg_3" y="97.006638" x="44.5" stroke-width="0" stroke="#000" fill="#ffffff">wc -l *.art</text>
   <rect stroke="#000" rx="6" id="svg_5" height="124.999996" width="151.999996" y="34.006638" x="251.470131" stroke-opacity="null" stroke-width="0" fill="#333333"/>
   <rect stroke="#ffffff" rx="6" fill-opacity="0" id="svg_6" height="52.999999" width="74.999995" y="52.006638" x="287.470131" stroke-width="2" fill="#000000"/>
   <text font-weight="bold" xml:space="preserve" text-anchor="left" font-family="'Courier New', Courier, monospace" font-size="16" id="svg_7" y="71.006638" x="294.470131" stroke-width="0" stroke="#000000" fill="#ffffff">$</text>
@@ -24,14 +24,14 @@
   <text font-weight="normal" xml:space="preserve" text-anchor="left" font-family="Helvetica, Arial, sans-serif" font-size="10" id="svg_12" y="96.756313" x="190.236738" stroke-width="0" stroke="#000000" fill="#ffffff">OUT</text>
   <rect stroke="#000" id="svg_13" height="26" width="117" y="278.322682" x="205.983058" stroke-opacity="null" stroke-width="0" fill="#3498db"/>
   <rect stroke="#000" rx="6" id="svg_15" height="44" width="168" y="269.07235" x="21.5" stroke-width="0" fill="#e74c3c"/>
-  <text font-weight="bold" xml:space="preserve" text-anchor="left" font-family="'Courier New', Courier, monospace" font-size="18" id="svg_16" y="295.07235" x="44.5" stroke-width="0" stroke="#000" fill="#ffffff">wc -l *.pdb</text>
+  <text font-weight="bold" xml:space="preserve" text-anchor="left" font-family="'Courier New', Courier, monospace" font-size="18" id="svg_16" y="295.07235" x="44.5" stroke-width="0" stroke="#000" fill="#ffffff">wc -l *.art</text>
   <rect stroke="#000" rx="6" id="svg_17" height="134.00298" width="151.999996" y="232.07235" x="251.470131" stroke-opacity="null" stroke-width="0" fill="#3498db"/>
   <text font-weight="normal" xml:space="preserve" text-anchor="left" font-family="Helvetica, Arial, sans-serif" font-size="16" id="svg_20" y="346.075668" x="278.47179" stroke-width="0" stroke="#000000" fill="#ffffff">Output in File</text>
   <path stroke="#000" id="svg_21" d="m188.739929,278.311859l24,0l19.999954,13.020447l-19.999954,13.020447l-24,0l0,-26.040894z" stroke-opacity="null" stroke-width="0" fill="#e74c3c"/>
   <text font-weight="normal" xml:space="preserve" text-anchor="left" font-family="Helvetica, Arial, sans-serif" font-size="10" id="svg_22" y="294.822025" x="190.236738" stroke-width="0" stroke="#000000" fill="#ffffff">OUT</text>
-  <text font-weight="bold" xml:space="preserve" text-anchor="left" font-family="'Courier New', Courier, monospace" font-size="18" id="svg_24" y="425.132751" x="31.506638" stroke-width="0" stroke="#000" fill="#e74c3c">wc -l *.pdb</text>
+  <text font-weight="bold" xml:space="preserve" text-anchor="left" font-family="'Courier New', Courier, monospace" font-size="18" id="svg_24" y="425.132751" x="31.506638" stroke-width="0" stroke="#000" fill="#e74c3c">wc -l *.art</text>
   <rect stroke="#000" rx="6" id="svg_25" height="44" width="168" y="451.132751" x="21.5" stroke-width="0" fill="#e74c3c"/>
-  <text font-weight="bold" xml:space="preserve" text-anchor="left" font-family="'Courier New', Courier, monospace" font-size="18" id="svg_26" y="477.132751" x="44.5" stroke-width="0" stroke="#000" fill="#ffffff">wc -l *.pdb</text>
+  <text font-weight="bold" xml:space="preserve" text-anchor="left" font-family="'Courier New', Courier, monospace" font-size="18" id="svg_26" y="477.132751" x="44.5" stroke-width="0" stroke="#000" fill="#ffffff">wc -l *.art</text>
   <path stroke="#000" id="svg_31" d="m188.739929,460.372406l24.000031,0l19.999924,13.020447l-19.999924,13.020447l-24.000031,0l0,-26.040894z" stroke-opacity="null" stroke-width="0" fill="#e74c3c"/>
   <text font-weight="normal" xml:space="preserve" text-anchor="left" font-family="Helvetica, Arial, sans-serif" font-size="10" id="svg_32" y="476.882427" x="190.236738" stroke-width="0" stroke="#000000" fill="#ffffff">OUT</text>
   <rect stroke="#000" id="svg_33" height="26" width="117" y="460.383083" x="586.109172" stroke-opacity="null" stroke-width="0" fill="#333333"/>
@@ -57,13 +57,13 @@
   <text style="cursor: move;" font-weight="bold" xml:space="preserve" text-anchor="left" font-family="'Courier New', Courier, monospace" font-size="18" id="svg_55" y="425.132751" x="181.556419" stroke-width="0" stroke="#000" fill="#f39c12">sort -n</text>
   <text style="cursor: move;" font-weight="bold" xml:space="preserve" text-anchor="left" font-family="'Courier New', Courier, monospace" font-size="18" id="svg_56" y="425.132751" x="271.586288" stroke-width="0" stroke="#000" fill="#000000">|</text>
   <text font-weight="bold" xml:space="preserve" text-anchor="left" font-family="'Courier New', Courier, monospace" font-size="18" id="svg_57" y="425.132751" x="291.592926" stroke-width="0" stroke="#000" fill="#9b59b6">head -1</text>
-  <text font-weight="bold" xml:space="preserve" text-anchor="left" font-family="'Courier New', Courier, monospace" font-size="18" id="svg_58" y="425.132751" x="31.506638" stroke-width="0" stroke="#000" fill="#e74c3c">wc -l *.pdb</text>
+  <text font-weight="bold" xml:space="preserve" text-anchor="left" font-family="'Courier New', Courier, monospace" font-size="18" id="svg_58" y="425.132751" x="31.506638" stroke-width="0" stroke="#000" fill="#e74c3c">wc -l *.art</text>
   <text style="cursor: move;" font-weight="bold" xml:space="preserve" text-anchor="left" font-family="'Courier New', Courier, monospace" font-size="18" id="svg_59" y="425.132751" x="11.5" stroke-width="0" stroke="#000" fill="#000000">$</text>
   <text style="cursor: move;" font-weight="bold" xml:space="preserve" text-anchor="left" font-family="'Courier New', Courier, monospace" font-size="18" id="svg_60" y="425.132751" x="161.549782" stroke-width="0" stroke="#000" fill="#000000">|</text>
   <text style="cursor: move;" font-weight="bold" xml:space="preserve" text-anchor="left" font-family="'Courier New', Courier, monospace" font-size="18" id="svg_61" y="425.132751" x="181.556419" stroke-width="0" stroke="#000" fill="#f39c12">sort -n</text>
   <text style="cursor: move;" font-weight="bold" xml:space="preserve" text-anchor="left" font-family="'Courier New', Courier, monospace" font-size="18" id="svg_62" y="425.132751" x="271.586288" stroke-width="0" stroke="#000" fill="#000000">|</text>
   <text font-weight="bold" xml:space="preserve" text-anchor="left" font-family="'Courier New', Courier, monospace" font-size="18" id="svg_63" y="425.132751" x="291.592926" stroke-width="0" stroke="#000" fill="#9b59b6">head -1</text>
-  <text font-weight="bold" xml:space="preserve" text-anchor="left" font-family="'Courier New', Courier, monospace" font-size="18" id="svg_64" y="223.065712" x="31.506638" stroke-width="0" stroke="#000" fill="#e74c3c">wc -l *.pdb</text>
+  <text font-weight="bold" xml:space="preserve" text-anchor="left" font-family="'Courier New', Courier, monospace" font-size="18" id="svg_64" y="223.065712" x="31.506638" stroke-width="0" stroke="#000" fill="#e74c3c">wc -l *.art</text>
   <text font-weight="bold" xml:space="preserve" text-anchor="left" font-family="'Courier New', Courier, monospace" font-size="18" id="svg_65" y="223.065712" x="11.5" stroke-width="0" stroke="#000" fill="#000000">$</text>
   <text style="cursor: move;" font-weight="bold" xml:space="preserve" text-anchor="left" font-family="'Courier New', Courier, monospace" font-size="18" id="svg_66" y="223.065712" x="161.549782" stroke-width="0" stroke="#000" fill="#000000">&gt;</text>
   <text font-weight="bold" xml:space="preserve" text-anchor="left" font-family="'Courier New', Courier, monospace" font-size="18" id="svg_67" y="223.065712" x="181.556419" stroke-width="0" stroke="#000" fill="#3498db">lengths</text>
