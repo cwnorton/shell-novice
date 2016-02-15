@@ -45,17 +45,14 @@
 <pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="kw">pwd</span></code></pre>
 <pre class="output"><code>/Users/nelle</code></pre>
 <pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="kw">ls</span> -F</code></pre>
-<pre class="output"><code>creatures/  molecules/           pizza.cfg
-data/       north-pacific-gyre/  solar.pdf
-Desktop/    notes.txt            writing/</code></pre>
+<pre class="output"><code>comedians/  Desktop/           notes.txt  scripts/   uk-newspapers/
+data/       keyword-clusters/  pizza.cfg  solar.pdf  writing/</code></pre>
 <p>Let’s create a new directory called <code>thesis</code> using the command <code>mkdir thesis</code> (which has no output):</p>
 <pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="kw">mkdir</span> thesis</code></pre>
 <p>As you might (or might not) guess from its name, <code>mkdir</code> means “make directory”. Since <code>thesis</code> is a relative path (i.e., doesn’t have a leading slash), the new directory is created in the current working directory:</p>
 <pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="kw">ls</span> -F</code></pre>
-<pre class="output"><code>creatures/  north-pacific-gyre/  thesis/
-data/       notes.txt            writing/
-Desktop/    pizza.cfg
-molecules/  solar.pdf</code></pre>
+<pre class="output"><code>comedians/  Desktop/           notes.txt  scripts/   thesis/         writing/
+data/       keyword-clusters/  pizza.cfg  solar.pdf  uk-newspapers/</code></pre>
 <p>However, there’s nothing in it yet:</p>
 <pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="kw">ls</span> -F thesis</code></pre>
 <p>Let’s change our working directory to <code>thesis</code> using <code>cd</code>, then run a text editor called Nano to create a file called <code>draft.txt</code>:</p>
