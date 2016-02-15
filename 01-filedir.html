@@ -131,8 +131,8 @@ Desktop/      Downloads/    Movies/       Pictures/</code></pre>
 <p>Now that we know the <code>data-shell</code> directory is located on our Desktop, we can do two things.</p>
 <p>First, we can look at its contents, using the same strategy as before, passing a directory name to <code>ls</code>:</p>
 <pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="kw">ls</span> -F Desktop/data-shell</code></pre>
-<pre class="output"><code>creatures/          molecules/          notes.txt           solar.pdf
-data/               north-pacific-gyre/ pizza.cfg           writing/</code></pre>
+<pre class="output"><code>comedians/  Desktop/           notes.txt  scripts/   uk-newspapers/
+data/       keyword-clusters/  pizza.cfg  solar.pdf  writing/</code></pre>
 <p>Second, we can actually change our location to a different directory, so we are no longer located in our home directory.</p>
 <p>The command to change locations is <code>cd</code> followed by a directory name to change our working directory. <code>cd</code> stands for “change directory”, which is a bit misleading: the command doesn’t change the directory, it changes the shell’s idea of what directory we are in.</p>
 <p>Let’s say we want to move to the <code>data</code> directory we saw above. We can use the following series of commands to get there:</p>
@@ -143,8 +143,7 @@ $ <span class="kw">cd</span> data</code></pre>
 <pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="kw">pwd</span></code></pre>
 <pre class="output"><code>/Users/lynne/Desktop/data-shell/data</code></pre>
 <pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="kw">ls</span> -F</code></pre>
-<pre class="output"><code>amino-acids.txt   elements/     pdb/            salmon.txt
-animals.txt       morse.txt     planets.txt     sunspot.txt</code></pre>
+<pre class="output"><code>amino-acids.txt  animals.txt  morse.txt  planets.txt  salmon.txt  sunspot.txt</code></pre>
 <p>We now know how to go down the directory tree: how do we go up? We might try the following:</p>
 <pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">cd</span> data-shell</code></pre>
 <pre class="error"><code>-bash: cd: data-shell: No such file or directory</code></pre>
