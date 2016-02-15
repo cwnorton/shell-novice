@@ -169,7 +169,7 @@ NENE01736A.txt
 ...
 NENE02043A.txt
 NENE02043B.txt</code></pre>
-<p>Her next step is to decide what to call the files that the <code>goostats</code> analysis program will create. Prefixing each input file’s name with “stats” seems simple, so she modifies her loop to do that:</p>
+<p>Her next step is to decide what to call the files that the <code>prep_article</code> analysis program will create. Prefixing each input file’s name with “stats” seems simple, so she modifies her loop to do that:</p>
 <pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="kw">for</span> <span class="kw">datafile</span> in *[AB].txt
 <span class="kw">&gt;</span> <span class="kw">do</span>
 <span class="kw">&gt;</span>     <span class="kw">echo</span> <span class="ot">$datafile</span> stats-<span class="ot">$datafile</span>
@@ -180,13 +180,13 @@ NENE01736A.txt stats-NENE01736A.txt
 ...
 NENE02043A.txt stats-NENE02043A.txt
 NENE02043B.txt stats-NENE02043B.txt</code></pre>
-<p>She hasn’t actually run <code>goostats</code> yet, but now she’s sure she can select the right files and generate the right output filenames.</p>
+<p>She hasn’t actually run <code>prep_article</code> yet, but now she’s sure she can select the right files and generate the right output filenames.</p>
 <p>Typing in commands over and over again is becoming tedious, though, and Lynne is worried about making mistakes, so instead of re-entering her loop, she presses the up arrow. In response, the shell redisplays the whole loop on one line (using semi-colons to separate the pieces):</p>
 <pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="kw">for</span> <span class="kw">datafile</span> in *[AB].txt<span class="kw">;</span> <span class="kw">do</span> <span class="kw">echo</span> <span class="ot">$datafile</span> stats-<span class="ot">$datafile</span><span class="kw">;</span> <span class="kw">done</span></code></pre>
-<p>Using the left arrow key, Lynne backs up and changes the command <code>echo</code> to <code>goostats</code>:</p>
-<pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="kw">for</span> <span class="kw">datafile</span> in *[AB].txt<span class="kw">;</span> <span class="kw">do</span> <span class="kw">bash</span> goostats <span class="ot">$datafile</span> stats-<span class="ot">$datafile</span><span class="kw">;</span> <span class="kw">done</span></code></pre>
+<p>Using the left arrow key, Lynne backs up and changes the command <code>echo</code> to <code>prep_article</code>:</p>
+<pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="kw">for</span> <span class="kw">datafile</span> in *[AB].txt<span class="kw">;</span> <span class="kw">do</span> <span class="kw">bash</span> prep_article <span class="ot">$datafile</span> stats-<span class="ot">$datafile</span><span class="kw">;</span> <span class="kw">done</span></code></pre>
 <p>When she presses enter, the shell runs the modified command. However, nothing appears to happen — there is no output. After a moment, Lynne realizes that since her script doesn’t print anything to the screen any longer, she has no idea whether it is running, much less how quickly. She kills the job by typing Control-C, uses up-arrow to repeat the command, and edits it to read:</p>
-<pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="kw">for</span> <span class="kw">datafile</span> in *[AB].txt<span class="kw">;</span> <span class="kw">do</span> <span class="kw">echo</span> <span class="ot">$datafile</span><span class="kw">;</span> <span class="kw">bash</span> goostats <span class="ot">$datafile</span> stats-<span class="ot">$datafile</span><span class="kw">;</span> <span class="kw">done</span></code></pre>
+<pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="kw">for</span> <span class="kw">datafile</span> in *[AB].txt<span class="kw">;</span> <span class="kw">do</span> <span class="kw">echo</span> <span class="ot">$datafile</span><span class="kw">;</span> <span class="kw">bash</span> prep_article <span class="ot">$datafile</span> stats-<span class="ot">$datafile</span><span class="kw">;</span> <span class="kw">done</span></code></pre>
 <aside class="callout panel panel-info">
 <div class="panel-heading">
 <h2><span class="glyphicon glyphicon-pushpin"></span>Beginning and End</h2>
@@ -210,10 +210,10 @@ NENE01736A.txt
 <pre><code>$ history | tail -5
   456  ls -l NENE0*.txt
   457  rm stats-NENE01729B.txt.txt
-  458  bash goostats NENE01729B.txt stats-NENE01729B.txt
+  458  bash prep_article NENE01729B.txt stats-NENE01729B.txt
   459  ls -l NENE0*.txt
   460  history</code></pre>
-<p>then she can re-run <code>goostats</code> on <code>NENE01729B.txt</code> simply by typing <code>!458</code>.</p>
+<p>then she can re-run <code>prep_article</code> on <code>NENE01729B.txt</code> simply by typing <code>!458</code>.</p>
 </div>
 </aside>
 <section class="challenge panel panel-success">
