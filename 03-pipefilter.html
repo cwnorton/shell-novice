@@ -131,33 +131,32 @@ $ <span class="kw">head</span> -1 sorted-lengths.txt</code></pre>
 <h2 id="lynnes-pipeline-checking-files">Lynne’s Pipeline: Checking Files</h2>
 <p>Lynne has run her downloaded article files through <code>split_articles</code> and created 1520 files in the <code>uk-newspapers/2012-07-03</code> directory described earlier. As a quick sanity check, starting from her home directory, Lynne types:</p>
 <pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="kw">cd</span> uk-newspapers/2012-07-03
-$ <span class="kw">wc</span> -l *.txt</code></pre>
-<p>The output is 1520 lines that look like this:</p>
-<pre class="output"><code>300 NENE01729A.txt
-300 NENE01729B.txt
-300 NENE01736A.txt
-300 NENE01751A.txt
-300 NENE01751B.txt
-300 NENE01812A.txt
-... ...</code></pre>
+$ <span class="kw">wc</span> -w *.txt</code></pre>
+<p>The output is 500 lines that look like this:</p>
+<pre class="output"><code>       264 article_001A.txt
+   302 article_002A.txt
+   220 article_003B.txt
+   159 article_004A.txt
+   155 article_005A.txt    
+   ... ...</code></pre>
 <p>Now she types this:</p>
-<pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="kw">wc</span> -l *.txt <span class="kw">|</span> <span class="kw">sort</span> -n <span class="kw">|</span> <span class="kw">head</span> -5</code></pre>
-<pre class="output"><code> 240 NENE02018B.txt
- 300 NENE01729A.txt
- 300 NENE01729B.txt
- 300 NENE01736A.txt
- 300 NENE01751A.txt</code></pre>
-<p>Whoops: one of the files is 60 lines shorter than the others. When she goes back and checks it, she sees that she did that assay at 8:00 on a Monday morning — someone was probably in using the machine on the weekend, and she forgot to reset it. Before re-running that sample, she checks to see if any files have too much data:</p>
+<pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="kw">wc</span> -w *.txt <span class="kw">|</span> <span class="kw">sort</span> -n <span class="kw">|</span> <span class="kw">head</span> -5</code></pre>
+<pre class="output"><code>     4 article_117A.txt
+   127 article_157A.txt
+   129 article_267A.txt
+   129 article_494A.txt
+   130 article_232A.txt</code></pre>
+<p>Whoops: one of the files is only 4 words long. When she goes back and checks it (using <code>cat article_117A.txt</code> to quickly display the contents), she sees that something has gone wrong, and the file only contains a document number label, with no titles, body text, etc.  Before checking what that file should have contained, she checks to see if any files are unusually large:</p>
 <pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="kw">wc</span> -l *.txt <span class="kw">|</span> <span class="kw">sort</span> -n <span class="kw">|</span> <span class="kw">tail</span> -5</code></pre>
-<pre class="output"><code> 300 NENE02040A.txt
- 300 NENE02040B.txt
- 300 NENE02040Z.txt
- 300 NENE02043A.txt
- 300 NENE02043B.txt</code></pre>
-<p>Those numbers look good — but what’s that ‘Z’ doing there in the third-to-last line? All of her samples should be marked ‘A’ or ‘B’; by convention, her lab uses ‘Z’ to indicate samples with missing information. To find others like it, she does this:</p>
+<pre class="output"><code>   332 article_445A.txt
+   334 article_067Z.txt
+   335 article_196A.txt
+   337 article_088A.txt
+113709 total</code></pre>
+<p>Those numbers look good — but what’s that ‘Z’ doing there on the second line? All the articles suitable for her corpus end with ‘A’ or ‘B’, depending on how useful Lynne expects them to be.  Earlier, Lynne decided to mark articles that might not be very useful with ‘Z’. To find others like it, she does this:</p>
 <pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="kw">ls</span> *Z.txt</code></pre>
-<pre class="output"><code>NENE01971Z.txt    NENE02040Z.txt</code></pre>
-<p>Sure enough, when she checks the log on her laptop, there’s no depth recorded for either of those samples. Since it’s too late to get the information any other way, she must exclude those two files from her analysis. She could just delete them using <code>rm</code>, but there are actually some analyses she might do later where depth doesn’t matter, so instead, she’ll just be careful later on to select files using the wildcard expression <code>*[AB].txt</code>. As always, the ‘*’ matches any number of characters; the expression <code>[AB]</code> matches either an ‘A’ or a ‘B’, so this matches all the valid data files she has.</p>
+<pre class="output"><code>article_067Z.txt  article_415Z.txt</code></pre>
+<p>Sure enough, when she looks at the content of the files, the subject matter doesn’t seem too suitable for her corpus — she needs to exclude these files from this analysis.  She could just delete them using <code>rm</code>, but there are actually some analyses she might do later where depth doesn’t matter, so instead, she’ll just be careful later on to select files using the wildcard expression <code>*[AB].txt</code>. As always, the ‘*’ matches any number of characters; the expression <code>[AB]</code> matches either ‘A’ or ‘B’ — so the full expression matches all the useful articles she has.</p>
 <section class="challenge panel panel-success">
 <div class="panel-heading">
 <h2><span class="glyphicon glyphicon-pencil"></span>What does <code>sort -n</code> do?</h2>
