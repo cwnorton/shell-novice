@@ -41,9 +41,9 @@
 </ul>
 </div>
 </section>
-<p>We now know how to explore files and directories, but how do we create them in the first place? Let’s go back to Lynne’s home directory, <code>/Users/nelle</code>, and use <code>ls -F</code> to see what it contains:</p>
+<p>We now know how to explore files and directories, but how do we create them in the first place? Let’s go back to Lynne’s home directory, <code>/Users/lynne</code>, and use <code>ls -F</code> to see what it contains:</p>
 <pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="kw">pwd</span></code></pre>
-<pre class="output"><code>/Users/nelle</code></pre>
+<pre class="output"><code>/Users/lynne</code></pre>
 <pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="kw">ls</span> -F</code></pre>
 <pre class="output"><code>comedians/  Desktop/           notes.txt  scripts/   uk-newspapers/
 data/       keyword-clusters/  pizza.cfg  solar.pdf  writing/</code></pre>
@@ -86,9 +86,9 @@ $ <span class="kw">nano</span> draft.txt</code></pre>
 <p>The Unix shell doesn’t have a trash bin that we can recover deleted files from (though most graphical interfaces to Unix do). Instead, when we delete files, they are unhooked from the file system so that their storage space on disk can be recycled. Tools for finding and recovering deleted files do exist, but there’s no guarantee they’ll work in any particular situation, since the computer may recycle the file’s disk space right away.</p>
 </div>
 </aside>
-<p>Let’s re-create that file and then move up one directory to <code>/Users/nelle</code> using <code>cd ..</code>:</p>
+<p>Let’s re-create that file and then move up one directory to <code>/Users/lynne</code> using <code>cd ..</code>:</p>
 <pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="kw">pwd</span></code></pre>
-<pre class="output"><code>/Users/nelle/thesis</code></pre>
+<pre class="output"><code>/Users/lynne/thesis</code></pre>
 <pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="kw">nano</span> draft.txt
 $ <span class="kw">ls</span></code></pre>
 <pre class="output"><code>draft.txt</code></pre>
@@ -115,7 +115,7 @@ $ <span class="kw">ls</span></code></pre>
 </aside>
 <p>Let’s create that directory and file one more time. (Note that this time we’re running <code>nano</code> with the path <code>thesis/draft.txt</code>, rather than going into the <code>thesis</code> directory and running <code>nano</code> on <code>draft.txt</code> there.)</p>
 <pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="kw">pwd</span></code></pre>
-<pre class="output"><code>/Users/nelle</code></pre>
+<pre class="output"><code>/Users/lynne</code></pre>
 <pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="kw">mkdir</span> thesis</code></pre>
 <pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="kw">nano</span> thesis/draft.txt
 $ <span class="kw">ls</span> thesis</code></pre>
