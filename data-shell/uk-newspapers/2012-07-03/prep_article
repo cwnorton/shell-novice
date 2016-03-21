@@ -1,0 +1,7 @@
+source=$(head -3 $1 | sed '/^$/d' | tail -1 | sed 's/[^A-z]//g')
+title=$(head -4 $1 | sed '/^$/d' | tail -1 | sed 's/[^A-z]//g')
+
+echo "<article source='$source' title='$title'>
+$(cat $1)
+</article>" > $2
+sleep 5
